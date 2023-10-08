@@ -1,38 +1,136 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
+    /* background-color: rgb(226, 222, 222); */
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    background-color:rgb(233, 231, 231);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Header{
+    padding: 10px;
+    height: 60px;
+    width: 100%;
+    background-color: aquamarine;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.foot{
+    position: absolute;
+    bottom: 0;
+    color: black;
+    text-align: center;
+    background-color: aquamarine;
+    width: 100%;
+    height: 80px;
+    
+}
+.Main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+.Notes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.helper{
+  max-width: 250px;
+  height: 250px;
+  background-color: white;
+  padding: 10px;
+}
+.content{
+    width: 100%;
+    max-width: 200px;
+    height: 250px;
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.NoteTitle{
+  width: 100%;
+  height: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  border: none;
+  border-bottom: 2px solid rgb(24, 105, 78);
+  font-size: 22px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(33, 146, 109);
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
+.NoteDetail{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.but{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+.but button{
+    border: none;
+    background-color: rgb(28, 131, 97);
+    color: white;
+    height: 25px;
+    width: 40px;
+}
+.inputArea{
+    height: 180px;
+    padding: 15px;
+}
+.inputArea input{
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 1.5px solid aquamarine;
+    outline: none;
+}
+::placeholder{
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.add1{
+    display: flex;
+    float: right;
+    margin-right: 10px;
+}
+textarea{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-bottom: 1px solid rgb(0, 255, 187);
+    outline: none;
+}
+.Notes button{
+    width: 60px;
+    height: 40px;
+    border: none;
+    background-color: aquamarine;
+    color: white;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[type=text]{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+textarea{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+but{
+    display: flex;
 }
